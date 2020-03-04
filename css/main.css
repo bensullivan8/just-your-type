@@ -17,6 +17,10 @@ html, body {
   height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
+
 .white {
   color: #fff;
 }
