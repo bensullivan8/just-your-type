@@ -1,5 +1,4 @@
 body {
-  font-family: Anton, sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-font-kerning: normal;
   -webkit-text-size-adjust: 100%;
@@ -23,10 +22,16 @@ a {
 
 .white {
   color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .black {
   color: #000;
+  font-family: Anton, sans-serif;
+}
+
+.large-text {
+  font-family: Anton, sans-serif;
 }
 
 .menu-list {
