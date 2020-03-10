@@ -26,7 +26,7 @@ a {
 }
 
 .black {
-  color: #000;
+  color: #28285E;
   font-family: Anton, sans-serif;
 }
 
@@ -47,7 +47,6 @@ a {
 .menu-list-item {
   position: relative;
   list-style-type: none;
-  cursor: pointer;
 }
 
 .menu-list-item::before {
@@ -60,6 +59,24 @@ a {
   height: 4px;
   border-radius: 4px;
   background: #ff2c75;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform .8s cubic-bezier(.16, 1.08, .38, .98);
+  transition: -webkit-transform .8s cubic-bezier(.16, 1.08, .38, .98);
+  transition: transform .8s cubic-bezier(.16, 1.08, .38, .98);
+  transition: transform .8s cubic-bezier(.16, 1.08, .38, .98), -webkit-transform .8s cubic-bezier(.16, 1.08, .38, .98);
+  z-index: 1;
+}
+
+.menu-list-part::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 49%;
+  left: -10%;
+  right: -10%;
+  height: 4px;
+  border-radius: 4px;
   -webkit-transform: scale(0);
   transform: scale(0);
   -webkit-transition: -webkit-transform .8s cubic-bezier(.16, 1.08, .38, .98);
